@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="myApp">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>  
+  <script src="app1.js"></script>
+    <h1>Login Page</h1>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    p a {
+         font-size: 11px;
+         color: #aaa;
+         float: right;
+         margin-top: -13px;
+         margin-right: 20px;
+         -webkit-transition: all .4s ease;
+         -moz-transition: all .4s ease;
+         transition: all .4s ease;
+         }
+    </style>
+</head> 
+<body>
+<div  ng-controller="LoginController">     
+<form class="form-signin">
+
+    
+    <table align="center">
+    <label for="username" class="sr-only">Username</label>
+        <input type="text" id="userName" class="form-control" placeholder="Username" required autofocus ng-model="userName">
+        
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Password" required autofocus ng-model="password">
+    </table>
+    
+    <br/>
+   <button  class="btn btn-lg btn-primary btn-block"id="Login" name="Login" ng_click="Login(userName, password)">Login</button><br>
+    <br>
+    New user?<a  href="register.html"><input type="button" value="register"/></a></div>
+</form>     
+</div>
+    
+<div id="x"></div>
+ </body>
+</html>
+
